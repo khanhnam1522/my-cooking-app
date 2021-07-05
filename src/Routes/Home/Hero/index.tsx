@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             </HeroText>
             <HeroBtn to="/">
               <Button primary big bigFont bigRadius>
-                Create An Account
+                Get Started
               </Button>
             </HeroBtn>
           </HeroContentText>
