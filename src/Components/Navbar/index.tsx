@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                 </MenuLink>
               </MenuItem>
               <MenuItem>
-                <MenuLink onClick={closeMenu} to="/">
+                <MenuLink onClick={closeMenu} to="/signIn">
                   Sign In
                 </MenuLink>
               </MenuItem>

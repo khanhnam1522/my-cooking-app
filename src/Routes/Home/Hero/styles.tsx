@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import ImgBg from "../../../images/hero-bg.png";
+import ImgBg from "../../../images/hero-bg.jpg";
 
 export const HeroContainer = styled.div`
   background-image: linear-gradient(

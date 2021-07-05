@@ -1,5 +1,5 @@
 import { FooterSection, FooterContainer, FooterCopyRight } from "./styles";
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <div>
       <FooterSection>
@@ -11,6 +11,6 @@ function Footer() {
       </FooterSection>
     </div>
   );
-}
+};
 
 export default Footer;

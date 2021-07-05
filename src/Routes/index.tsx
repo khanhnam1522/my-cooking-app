@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import GlobalStyles from "../styles";
 import Home from "./Home";
+import SignIn from "./SignIn";
 
 const Routes: React.FC = () => {
   return (
@@ -8,8 +9,8 @@ const Routes: React.FC = () => {
       <GlobalStyles />
       <Switch>
         <Route path="/" exact component={Home} />
+        <Route path="/signIn" exact component={SignIn} />
       </Switch>
-      {/* <Footer/> */}
     </Router>
   );
 };
