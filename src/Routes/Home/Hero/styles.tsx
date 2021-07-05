@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import ImgBg from "../../images/hero-bg.png";
+import ImgBg from "../../../images/hero-bg.png";
 
 export const HeroContainer = styled.div`
   background-image: linear-gradient(
@@ -38,13 +38,12 @@ export const HeroContent = styled.section`
 
 export const HeroContentText = styled.div`
   width: 50%;
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     width: 80%;
   }
   @media only screen and (max-width: 375px) {

@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   const closeMenu = () => setClick(false);
 
   const showButton = () => {
-    if (window.innerWidth <= 1000) {
+    if (window.innerWidth <= 700) {
       setButton(false);
     } else {
       setButton(true);
@@ -63,11 +63,11 @@ const Navbar: React.FC = () => {
                     <Button primary>Sign Up</Button>
                   </MenuLinkBtn>
                 ) : (
-                  <MenuLinkBtn to="/">
-                    <Button primary bigFont onClick={closeMenu}>
+                  <MenuItem>
+                    <MenuLink onClick={closeMenu} to="/">
                       Sign Up
-                    </Button>
-                  </MenuLinkBtn>
+                    </MenuLink>
+                  </MenuItem>
                 )}
               </MenuItemBtn>
             </Menu>

@@ -75,7 +75,7 @@ export const Button = styled.button<ButtonProps>`
     transform: translateY(0.5rem);
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 700px) {
     /* width: 100%; */
     padding: ${({ big }) => (big ? "18px 30px" : "10px 20px")};
   }

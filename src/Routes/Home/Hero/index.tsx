@@ -1,5 +1,5 @@
-import Navbar from "../Navbar";
-import { Button } from "../../styles";
+import { Navbar } from "../../../Components";
+import { Button } from "../../../styles";
 import {
   HeroContainer,
   HeroContent,
@@ -19,17 +19,17 @@ const Hero: React.FC = () => {
         <HeroContent>
           <HeroContentText>
             <HeroTitle>
-              <HeroTitleText>Healthy</HeroTitleText>
-              <HeroTitleText>Meals All Day</HeroTitleText>
+              <HeroTitleText>All Your Food</HeroTitleText>
+              <HeroTitleText>One Place</HeroTitleText>
             </HeroTitle>
-            <HeroSubTitle>For a longer Life</HeroSubTitle>
+            <HeroSubTitle>For a better life</HeroSubTitle>
             <HeroText>
-              Get a fresh and tasty recepies that are well balanced and will
-              improve your wellness, plus add nutrients to your body.
+              Save and organize your favorite recipes in one place. Create meal
+              plans, and generate grocery lists. We make cook's life easier
             </HeroText>
             <HeroBtn to="/">
               <Button primary big bigFont bigRadius>
-                Pick your meals
+                Create An Account
               </Button>
             </HeroBtn>
           </HeroContentText>

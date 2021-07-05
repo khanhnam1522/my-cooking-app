@@ -51,7 +51,7 @@ export const NavIcon = styled(BiRestaurant)`
 export const MenuIcon = styled.div`
   display: none;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 700px) {
     display: block;
     position: absolute;
     top: 0;
@@ -67,7 +67,7 @@ export const Menu = styled.ul<MenuProps>`
   align-items: center;
   text-align: center;
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -84,7 +84,7 @@ export const MenuItem = styled.li`
   list-style: none;
   height: 80px;
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 700px) {
     width: 100%;
     &:hover {
       border: none;
@@ -113,7 +113,7 @@ export const MenuLink = styled(Link)`
     color: #e38b06;
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 700px) {
     display: block;
     padding: 3rem;
     text-align: center;
@@ -123,12 +123,11 @@ export const MenuLink = styled(Link)`
 
 export const MenuItemBtn = styled.li`
   list-style: none;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 700px) {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 120px;
   }
 `;
 
