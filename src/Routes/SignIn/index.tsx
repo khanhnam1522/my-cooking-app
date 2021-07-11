@@ -11,8 +11,7 @@ import {
 	SubmitButton,
 } from './styles';
 
-const SignIn: React.FC = () => {
-	return (
+const SignIn: React.FC = () => (
 		<div>
 			<LoginContainer>
 				<BackgroundGradient>
@@ -37,6 +36,5 @@ const SignIn: React.FC = () => {
 			</LoginContainer>
 		</div>
 	);
-};
 
 export default SignIn;

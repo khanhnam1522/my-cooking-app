@@ -14,6 +14,7 @@ import {
 	MenuItemBtn,
 	MenuLinkBtn,
 } from './styles';
+
 const Navbar: React.FC = () => {
 	const [click, setClick] = useState(false);
 	const [button, setButton] = useState(true);
