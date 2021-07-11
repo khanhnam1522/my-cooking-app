@@ -7,13 +7,22 @@ import {
 	FormTitle,
 } from './styles';
 
-const Form: React.FC = () => (
+interface FormProps {
+	title: string;
+	inputFields: { placeholder: string; type: string }[];
+}
+
+const Form: React.FC<FormProps> = ({ title, inputFields }) => (
 	<FormContainer>
 		<FormBox>
-			<FormTitle>Sign In</FormTitle>
-			<InputForm placeholder="Email" type="email" />
-			<InputForm placeholder="Password" type="password" />
-			<SubmitButton type="submit">Sign In</SubmitButton>
+			<FormTitle>{title}</FormTitle>
+			{inputFields.map((inputField) => (
+				<InputForm
+					placeholder={inputField.placeholder}
+					type={inputField.type}
+				/>
+			))}
+			<SubmitButton type="submit">{title}</SubmitButton>
 		</FormBox>
 	</FormContainer>
 );
