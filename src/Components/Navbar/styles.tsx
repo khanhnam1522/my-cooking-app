@@ -1,147 +1,147 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { BiRestaurant } from "react-icons/bi";
-import { Container } from "../../styles";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { BiRestaurant } from 'react-icons/bi';
+import { Container } from '../../styles';
 
 export const Nav = styled.nav`
-  font-size: 18px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  height: 80px;
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	font-size: 18px;
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const NavbarContainer = styled(Container)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  ${Container};
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+	${Container};
 `;
 
 export const NavLogo = styled(Link)`
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 2.5rem;
-  font-weight: 800;
-  transition: all 0.5s ease;
-  &:hover {
-    transform: scale(1.08);
-  }
+	color: #fff;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-size: 2.5rem;
+	font-weight: 800;
+	transition: all 0.5s ease;
+	&:hover {
+		transform: scale(1.08);
+	}
 `;
 
 export const NavIcon = styled(BiRestaurant)`
-  margin-right: 0.8rem;
-  transition: all 0.5s ease;
+	margin-right: 0.8rem;
+	transition: all 0.5s ease;
 
-  &:hover {
-    transform: scale(2);
-  }
+	&:hover {
+		transform: scale(2);
+	}
 `;
 
 export const MenuIcon = styled.div`
-  display: none;
+	display: none;
 
-  @media (max-width: 700px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-50%, 20%);
-    font-size: 4rem;
-    cursor: pointer;
-  }
+	@media (max-width: 700px) {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translate(-50%, 20%);
+		font-size: 4rem;
+		cursor: pointer;
+	}
 `;
 
 export const Menu = styled.ul<MenuProps>`
-  display: flex;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	align-items: center;
+	text-align: center;
 
-  @media only screen and (max-width: 700px) {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 80px;
-    left: ${({ click }) => (click ? "0" : "-100%")};
-    background-color: rgba(0, 0, 0, 0.9);
-    transition: all 0.5s ease;
-  }
+	@media only screen and (max-width: 700px) {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		position: absolute;
+		top: 80px;
+		left: ${({ click }) => (click ? '0' : '-100%')};
+		background-color: rgba(0, 0, 0, 0.9);
+		transition: all 0.5s ease;
+	}
 `;
 
 export const MenuItem = styled.li`
-  list-style: none;
-  height: 80px;
+	list-style: none;
+	height: 80px;
 
-  @media only screen and (max-width: 700px) {
-    width: 100%;
-    &:hover {
-      border: none;
-    }
-  }
+	@media only screen and (max-width: 700px) {
+		width: 100%;
+		&:hover {
+			border: none;
+		}
+	}
 `;
 
 export const MenuLink = styled(Link)`
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  height: 100%;
-  transition: all 0.2s ease;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2rem;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+	height: 100%;
+	transition: all 0.2s ease;
 
-  &:hover {
-    color: #e38b06;
-    transform: traslateY(-3rem);
-  }
-  &:active {
-    transform: traslateY(3rem);
-    color: #e38b06;
-  }
+	&:hover {
+		color: #e38b06;
+		transform: traslateY(-3rem);
+	}
+	&:active {
+		transform: traslateY(3rem);
+		color: #e38b06;
+	}
 
-  @media only screen and (max-width: 700px) {
-    display: block;
-    padding: 3rem;
-    text-align: center;
-    transition: all 0.2s ease;
-  }
+	@media only screen and (max-width: 700px) {
+		display: block;
+		padding: 3rem;
+		text-align: center;
+		transition: all 0.2s ease;
+	}
 `;
 
 export const MenuItemBtn = styled.li`
-  list-style: none;
-  @media screen and (max-width: 700px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
+	list-style: none;
+	@media screen and (max-width: 700px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+	}
 `;
 
 export const MenuLinkBtn = styled(Link)`
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 16px;
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
 `;
 
 interface MenuProps {
-  readonly click: boolean;
+	readonly click: boolean;
 }
