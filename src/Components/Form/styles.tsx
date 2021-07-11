@@ -17,6 +17,11 @@ export const FormBox = styled.form`
 	flex-direction: column;
 `;
 
+export const FormTitle = styled.h1`
+	margin-bottom: 14px;
+	color: #fff;
+`;
+
 export const InputForm = styled.input`
 	outline-width: 0;
 	height: 40px;
