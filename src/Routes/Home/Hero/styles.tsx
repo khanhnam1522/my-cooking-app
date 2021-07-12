@@ -19,7 +19,7 @@ export const HeroContainer = styled.div`
 	}
 `;
 
-export const HeroContent = styled.section`
+export const HeroContent = styled.div`
 	height: 100%;
 	width: 100%;
 	position: relative;

@@ -27,12 +27,12 @@ const Hero: React.FC = () => (
 						Save and organize your favorite recipes in one place. Create meal
 						plans, and generate grocery lists. We make cook&apos;s life easier
 					</HeroText>
-					<HeroBtn to="/">
-						<Button primary big bigFont bigRadius>
-							Get Started
-						</Button>
-					</HeroBtn>
 				</HeroContentText>
+				<HeroBtn to="/signIn">
+					<Button primary big bigFont bigRadius>
+						Get Started
+					</Button>
+				</HeroBtn>
 			</HeroContent>
 		</HeroContainer>
 	</div>

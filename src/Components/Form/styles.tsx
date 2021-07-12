@@ -40,3 +40,19 @@ export const SubmitButton = styled.button`
 	border: none;
 	margin-top: 20px;
 `;
+
+export const SubTitleContainer = styled.h4`
+	margin-top: 20px;
+`;
+
+export const SubTitle = styled.span`
+	color: gray;
+`;
+
+export const SubLink = styled.span`
+	color: white;
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+`;
